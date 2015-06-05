@@ -4544,13 +4544,9 @@ body {
   font-weight: 100;
 }
 
-.navbar .container-fluid {
+.navbar .container {
   z-index: 2;
   position: relative;
-}
-
-.navbar a, .navbar svg {
-  display: block;
 }
 
 .navbar #logo, .navbar #logo path {
@@ -4575,7 +4571,7 @@ body {
   position: absolute;
   top: 0;
   left: -1px;
-  transform: skew(0, 2deg);
+  transform: skew(0, 1.5deg);
   background-color: #fff;
   -webkit-backface-visibility: hidden;
   z-index: 1;
