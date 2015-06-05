@@ -45,7 +45,7 @@ require_once('inc/wp_bootstrap_navwalker.php');
 function portfolio_scripts() {	
 	wp_enqueue_style( 'portfolio-css', get_stylesheet_uri());
 	wp_enqueue_script( 'portfolio-bootstrap-js', get_template_directory_uri() .'/bootstrap-sass/javascripts/bootstrap.min.js', array( 'jquery' ));
-	wp_enqueue_script( 'portfolio', get_template_directory_uri() . '/js/portfolio.min.js', array( 'jquery' ));
+	wp_enqueue_script( 'portfolio', get_template_directory_uri() . '/js/portfolio.js', array( 'jquery' ));
 }
 add_action( 'wp_enqueue_scripts', 'portfolio_scripts' );
 

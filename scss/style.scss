@@ -14,4 +14,19 @@ License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 
 @import "_navbar.scss";
 
+#content {
+	position: relative;
+	//^ covers gaps on left from resizing diagonal
+	min-height: 400px;
+}
 
+#footer {
+	background-color: #000;
+	min-height: 200px;
+}
+.stickyfooter #footer {
+	position: absolute;
+	bottom: 0;
+	left:0;
+	width:100%;
+}

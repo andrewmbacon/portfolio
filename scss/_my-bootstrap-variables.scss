@@ -1,12 +1,15 @@
-$body-bg: 						#000;
+$brand-primary: 					#499fff;
 
 
+$body-bg: 							#d9d9d9;
+$font-family-sans-serif:			"Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
-$font-family-sans-serif:		"Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-
-$navbar-height:					107px;
-$navbar-border-radius:			0;
-$navbar-default-bg:				#fff;
-$navbar-default-link-color: 	#5d5d5d;
+$navbar-height:						97px;
+$navbar-margin-bottom:				0;
+$navbar-border-radius:				0;
+$navbar-default-bg:					#fff;
+$navbar-default-link-color: 		#5d5d5d;
+$navbar-default-link-hover-color:	$brand-primary; 
+$navbar-default-link-active-color:	$brand-primary; 
+$navbar-default-link-active-bg:		transparent;
