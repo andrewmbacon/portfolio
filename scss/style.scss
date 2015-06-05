@@ -8,4 +8,79 @@ License: 		GNU General Public License v2 or later
 License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+@import "_my-bootstrap-variables.scss";
 @import "_my-bootstrap.scss";
+
+
+
+//== Navbar
+body {
+	overflow: hidden;
+	// needed so that the 101% diagnoal doesn't trigger a horizotnal scroll. 
+}
+.navbar {
+	position:relative;
+	font-size: 21px;
+	font-weight: 100;
+
+	.container-fluid {
+		z-index: 2;
+		position: relative;
+
+		
+	}
+	
+	a, svg {
+		display: block;	
+	}
+
+
+	#logo, #logo path {
+		width:49px;
+		height:37px;
+	}
+	#name {
+		width:163px;
+		height: 22px;
+
+		#name-first {
+			opacity:.3;
+		}
+	}
+}
+
+.navbar:after {
+	content:'';
+	display: block;
+	height: 155px;
+	width:101%;
+	// needed to cover the gap that appears bottom right from twisting. 
+	position: absolute;
+	top:0;
+	left:-1px;
+	transform: skew(0,2deg);
+	background-color: $navbar-default-bg;
+	//background-color: red; opacity: .5;
+	-webkit-backface-visibility: hidden;
+	z-index: 1;
+}
+@media (max-width: 1600px) {
+	.navbar:after {
+		height: 137px
+	}
+}
+@media (max-width: 1200px) {
+	.navbar:after {
+		height: 131px
+	}
+}
+@media (max-width: 1028px) {
+	.navbar:after {
+		height: 128px
+	}
+}
+@media (max-width: 767px) {
+	.navbar:after {
+		height: 123px
+	}
+}
