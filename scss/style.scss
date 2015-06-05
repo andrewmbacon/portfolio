@@ -10,9 +10,8 @@ License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 
 @import "_my-bootstrap-variables.scss";
 @import "_my-bootstrap.scss";
-
-
 @import "_navbar.scss";
+@import "_footer.scss";
 
 #content {
 	position: relative;
@@ -20,13 +19,4 @@ License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 	min-height: 400px;
 }
 
-#footer {
-	background-color: #000;
-	min-height: 200px;
-}
-.stickyfooter #footer {
-	position: absolute;
-	bottom: 0;
-	left:0;
-	width:100%;
-}
+

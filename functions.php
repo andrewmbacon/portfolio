@@ -137,7 +137,7 @@ add_action( 'init', 'create_post_types' );
 function portfolio_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Sidebar', 'portfolio' ),
-		'id'            => 'sidebar-1',
+		'id'            => 'sidebar',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
@@ -146,7 +146,7 @@ function portfolio_widgets_init() {
 	) );
 	register_sidebar( array(
 		'name'          => __( 'Footer', 'portfolio' ),
-		'id'            => 'sidebar-footer',
+		'id'            => 'footer',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class=" col-sm-4 widget %2$s">',
 		'after_widget'  => '</aside>',

@@ -1,7 +1,7 @@
 //== Navbar
 #header {
-	overflow: hidden;
-	height: 180px;
+	overflow-x: hidden;
+	min-height: 200px;
 }
 .navbar {
 	position:relative;
@@ -44,6 +44,7 @@
 	position: absolute;
 	top:0;
 	left:-1px;
+	-webkit-transform: skew(0,1.5deg);
 	transform: skew(0,1.5deg);
 	background-color: $navbar-default-bg;
 	//background-color: red; opacity: .5;
@@ -53,26 +54,26 @@
 }
 @media (max-width: 1600px) {
 	.navbar:after {
-		height: 120px
+		height: 120px;
 	}
 }
 @media (max-width: 1440px) {
 	.navbar:after {
-		height: 118px
+		height: 118px;
 	}
 }
 @media (max-width: 1280px) {
 	.navbar:after {
-		height: 115px
+		height: 115px;
 	}
 }
 @media (max-width: 1024px) {
 	.navbar:after {
-		height: 111px
+		height: 111px;
 	}
 }
 @media (max-width: 768px) {
 	.navbar:after {
-		height: 108px
+		height: 108px;
 	}
 }

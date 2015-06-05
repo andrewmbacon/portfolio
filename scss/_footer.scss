@@ -1,0 +1,68 @@
+//== Footer
+#footer {
+	
+
+	position: relative;
+	color:#fff;
+	overflow: hidden;
+	padding-top: 100px;
+
+	#footer-inner {
+		background-color: #000;
+		position: relative;
+			min-height: 200px;
+
+		* {
+			z-index: 2;
+			position: relative;
+		}
+
+		&:after{
+			content: '';
+			display: block;
+			position: absolute;
+			top:-35px;
+			left:0;
+			-webkit-transform: skew(0,-1.5deg);
+			transform: skew(0,-1.5deg);
+			background-color: #000;
+			//background-color: red; opacity: .5;
+			height: 100px;
+			width:101%;
+			z-index: 1;
+		}
+	}
+
+	
+}
+@media (max-width: 1600px) {
+	#footer #footer-inner:after {
+		top: -22px;
+	}
+}
+@media (max-width: 1440px) {
+	#footer #footer-inner:after {
+		top: -20px;	
+	}
+}
+@media (max-width: 1280px) {
+	#footer #footer-inner:after {
+		top: -18px;	
+	}
+}
+@media (max-width: 1024px) {
+	#footer #footer-inner:after {
+		top: -15px;	
+	}
+}
+@media (max-width: 768px) {
+	#footer #footer-inner:after {
+		top: -11px;	
+	}
+}
+.stickyfooter #footer {
+	position: absolute;
+	bottom: 0;
+	left:0;
+	width:100%;
+}

@@ -1,3 +1,6 @@
+
+//== Bootstrap - Trimmed down to only include peices necessary for this build. 
+
 // Core variables and mixins
 @import "../bootstrap-sass/stylesheets/bootstrap/variables";
 @import "../bootstrap-sass/stylesheets/bootstrap/mixins";
@@ -5,19 +8,23 @@
 // Reset and dependencies
 @import "../bootstrap-sass/stylesheets/bootstrap/normalize";
 @import "../bootstrap-sass/stylesheets/bootstrap/print";
-@import "../bootstrap-sass/stylesheets/bootstrap/glyphicons";
+//@import "../bootstrap-sass/stylesheets/bootstrap/glyphicons";
 
 // Core CSS
 @import "../bootstrap-sass/stylesheets/bootstrap/scaffolding";
 @import "../bootstrap-sass/stylesheets/bootstrap/type";
-@import "../bootstrap-sass/stylesheets/bootstrap/code";
+//@import "../bootstrap-sass/stylesheets/bootstrap/code";
 @import "../bootstrap-sass/stylesheets/bootstrap/grid";
 //@import "../bootstrap-sass/stylesheets/bootstrap/tables";
 @import "../bootstrap-sass/stylesheets/bootstrap/forms";
+// ^^ requried for mobile nav. 
+
 //@import "../bootstrap-sass/stylesheets/bootstrap/buttons";
 
 // Components
 @import "../bootstrap-sass/stylesheets/bootstrap/component-animations";
+// ^^ requried for mobile nav. 
+
 //@import "../bootstrap-sass/stylesheets/bootstrap/dropdowns";
 //@import "../bootstrap-sass/stylesheets/bootstrap/button-groups";
 //@import "../bootstrap-sass/stylesheets/bootstrap/input-groups";
@@ -46,5 +53,5 @@
 //@import "../bootstrap-sass/stylesheets/bootstrap/carousel";
 
 // Utility classes
-@import "../bootstrap-sass/stylesheets/bootstrap/utilities";
-@import "../bootstrap-sass/stylesheets/bootstrap/responsive-utilities";
+//@import "../bootstrap-sass/stylesheets/bootstrap/utilities";
+//@import "../bootstrap-sass/stylesheets/bootstrap/responsive-utilities";

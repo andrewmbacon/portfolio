@@ -2,8 +2,20 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="cleartype" content="on">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Mission Accomplished">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo get_stylesheet_directory_uri(); ?>/img/144.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri(); ?>/img/114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri(); ?>/img/72.png">
+<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/57.png">
+<link rel="shortcut icon" href="img/144.png">
+<title><?php bloginfo('name'); wp_title(); ?></title>
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
