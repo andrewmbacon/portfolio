@@ -17,6 +17,11 @@
 <link rel="shortcut icon" href="img/144.png">
 <title><?php bloginfo('name'); wp_title(); ?></title>
 <?php wp_head(); ?>
+<?php 
+	if (is_page_template('page-projects-client.php')){
+		echo "<meta name='robots' content='noindex,follow' />";
+	};
+?>
 </head>
 <body <?php body_class(); ?>>
 <nav id="skiplinks" class="sr-only">

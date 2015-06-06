@@ -812,8 +812,8 @@ address {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .container:before,
@@ -828,27 +828,27 @@ address {
 
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 800px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+    width: 1020px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 1220px;
   }
 }
 
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .container-fluid:before,
@@ -862,8 +862,8 @@ address {
 }
 
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
 .row:before,
@@ -879,8 +879,8 @@ address {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
@@ -2120,8 +2120,8 @@ select[multiple].input-lg {
 }
 
 .form-horizontal .form-group {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
 .form-horizontal .form-group:before,
@@ -2143,7 +2143,7 @@ select[multiple].input-lg {
 }
 
 .form-horizontal .has-feedback .form-control-feedback {
-  right: 15px;
+  right: 40px;
 }
 
 @media (min-width: 768px) {
@@ -2428,8 +2428,8 @@ tbody.collapse.in {
 
 .navbar-collapse {
   overflow-x: visible;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 40px;
+  padding-left: 40px;
   border-top: 1px solid transparent;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
@@ -2488,8 +2488,8 @@ tbody.collapse.in {
 .container > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -40px;
+  margin-left: -40px;
 }
 
 @media (min-width: 768px) {
@@ -2541,7 +2541,7 @@ tbody.collapse.in {
 
 .navbar-brand {
   float: left;
-  padding: 38.5px 15px;
+  padding: 38.5px 40px;
   font-size: 18px;
   line-height: 20px;
   height: 97px;
@@ -2559,14 +2559,14 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
-    margin-left: -15px;
+    margin-left: -40px;
   }
 }
 
 .navbar-toggle {
   position: relative;
   float: right;
-  margin-right: 15px;
+  margin-right: 40px;
   padding: 9px 10px;
   margin-top: 31.5px;
   margin-bottom: 31.5px;
@@ -2598,7 +2598,7 @@ tbody.collapse.in {
 }
 
 .navbar-nav {
-  margin: 19.25px -15px;
+  margin: 19.25px -40px;
 }
 
 .navbar-nav > li > a {
@@ -2645,9 +2645,9 @@ tbody.collapse.in {
 }
 
 .navbar-form {
-  margin-left: -15px;
-  margin-right: -15px;
-  padding: 10px 15px;
+  margin-left: -40px;
+  margin-right: -40px;
+  padding: 10px 40px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -2766,8 +2766,8 @@ tbody.collapse.in {
 @media (min-width: 768px) {
   .navbar-text {
     float: left;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 
@@ -2777,7 +2777,7 @@ tbody.collapse.in {
   }
   .navbar-right {
     float: right !important;
-    margin-right: -15px;
+    margin-right: -40px;
   }
   .navbar-right ~ .navbar-right {
     margin-right: 0;
@@ -3255,6 +3255,46 @@ a.badge:focus {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+
+.page-template-page-projects #content .thumbnail {
+  display: block;
+  position: relative;
+  border-radius: 1000px;
+  overflow: hidden;
+  transition: transform 0.17s, -webkit-transform 0.17s;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.page-template-page-projects #content .thumbnail img {
+  -webkit-border-radius: 1000px;
+  border-radius: 1000px;
+  width: 100%;
+  transition: transform 0.17s, -webkit-transform 0.17s;
+  border: 11px solid #ccc;
+}
+
+.page-template-page-projects #content .thumbnail:hover {
+  border-color: red;
+}
+
+.page-template-page-projects #content .thumbnail:hover img {
+  -webkit-transform: scale(1.55, 1.55);
+  transform: scale(1.55, 1.55);
+}
+
+.page-template-page-projects #content .thumbnail:active {
+  top: 4px;
+  border: 4px solid red;
+}
+
+.page-template-page-projects #content .text {
+  padding: 5px;
+}
+
+.page-template-page-projects #content .text .title {
+  text-align: center;
+  font-size: 1em;
 }
 
 #content {

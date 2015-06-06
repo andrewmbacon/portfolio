@@ -15,7 +15,7 @@ add_theme_support( 'html5', array(
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption',
 	) );
 add_theme_support( 'post-thumbnails', array( 'post', 'project' ) );
-
+set_post_thumbnail_size( 700, 700 );
 
 
 function disable_comments_media_attachments( $open, $post_id ){
@@ -96,36 +96,36 @@ function create_post_types() {
 	);
 	register_post_type( 'project',$project_args);
 
-	register_taxonomy( 'skillset', 'project',
+	register_taxonomy( 'projectcategory', 'project',
 		array(
-			'label' 		=> 'Skillsets',
+			'label' 		=> 'Project Categories',
 			'labels' 		=> array(
-									'name' 			=> 'Skillsets',
-									'singular_name' => 'Skillset',
-									'search_items' 	=> 'Search Skillset',
-									'edit_item' 	=> 'Edit Skillset',
-									'view_item' 	=> 'View Skillset',
-									'update_item' 	=> 'Update Skillset',
-									'add_new_item' 	=> 'Add New Skillset',
-									'new_item_name' => 'New Skillset'
+									'name' 			=> 'Project Categories',
+									'singular_name' => 'Project Category',
+									'search_items' 	=> 'Search Project Categories',
+									'edit_item' 	=> 'Edit Project Category',
+									'view_item' 	=> 'View Project Category',
+									'update_item' 	=> 'Update Project Category',
+									'add_new_item' 	=> 'Add New Project Category',
+									'new_item_name' => 'New Project Category'
 								),
 			'public' 		=> true,
 			'hierarchical' 	=> true,
 			'rewrite' 		=> array('hierarchical' => true )
 		)
 	);
-	register_taxonomy( 'tool', 'project',
+	register_taxonomy( 'projecttag', 'project',
 		array(
-			'label' 		=> 'Tools',
+			'label' 		=> 'Project Tags',
 			'labels' 		=> array(
-									'name' 			=> 'Tools',
-									'singular_name' => 'Tool',
-									'search_items' 	=> 'Search Tools',
-									'edit_item' 	=> 'Edit Tool',
-									'view_item' 	=> 'View Tool',
-									'update_item' 	=> 'Update Tool',
-									'add_new_item' 	=> 'Add New Tool',
-									'new_item_name' => 'New Tool'
+									'name' 			=> 'Project Tags',
+									'singular_name' => 'Project Tag',
+									'search_items' 	=> 'Search Project Tags',
+									'edit_item' 	=> 'Edit Project Tag',
+									'view_item' 	=> 'View Project Tag',
+									'update_item' 	=> 'Update Project Tag',
+									'add_new_item' 	=> 'Add New Project Tag',
+									'new_item_name' => 'New Project Tag'
 								),
 			'public' 		=> true,
 			'hierarchical' 	=> false,
@@ -155,5 +155,12 @@ function portfolio_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'portfolio_widgets_init' );
+
+// Adds bootstrap class to all images. 
+function img_responsive($class) {
+    $class .= ' img-responsive';
+    return $class;
+}
+add_filter('get_image_tag_class', 'img_responsive' );
 
 ?>
