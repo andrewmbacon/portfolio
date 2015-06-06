@@ -14,6 +14,17 @@ License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 @import "_footer.scss";
 @import "_projects-grid.scss";
 
+body {
+	background: #d6d6d6;
+	background: -moz-linear-gradient(top,  #d6d6d6 0%, #efefef 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d6d6d6), color-stop(100%,#efefef));
+	background: -webkit-linear-gradient(top,  #d6d6d6 0%,#efefef 100%);
+	background: -o-linear-gradient(top,  #d6d6d6 0%,#efefef 100%);
+	background: -ms-linear-gradient(top,  #d6d6d6 0%,#efefef 100%);
+	background: linear-gradient(to bottom,  #d6d6d6 0%,#efefef 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d6d6', endColorstr='#efefef',GradientType=0 );
+}
+
 #content {
 	position: relative;
 	//^ covers gaps on left from resizing diagonal
@@ -21,3 +32,74 @@ License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 }
 
 
+.single-project {
+	hr {
+		border-color:#aeaeae;
+		margin-top: 0;
+	}
+	#content {
+		margin-top: -40px;
+	}
+	#project-header {
+		//border-bottom:1px solid #aeaeae;
+	}
+	#project-meta {
+		text-align: right;
+		font-size: 14px;
+		padding-top: 32px;
+	}
+	#project-title {
+		#description {
+			font-size:18px;
+			font-weight: 100;
+			color:#616161;
+		}
+	}
+	#project-main {
+		margin-top: 47px;
+		margin-bottom: 50px;
+	}
+}
+
+#footer {
+	#footer-inner {
+		padding-top: 20px;
+		font-size: 18px;
+	}
+
+	#about {
+		position: relative;
+		padding-left: 145px;
+		img {
+			display: block;
+			position: absolute;
+			top:0;
+			left: 0;
+			width:110px;
+			height:110px;
+			border:8px solid #494949;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	.widget_search {
+		position: relative;
+
+		#search {
+			border-width:0;
+			padding:9px 85px 9px 15px;
+			background-color: #333;
+			width:100%;
+		}
+		#search-button {
+			position: absolute;
+			top:0;
+			right: 0;
+			padding:9px 18px;
+			background-color: #262626;
+			border:0;
+			border-left: 5px solid #000;
+		}
+	}
+}

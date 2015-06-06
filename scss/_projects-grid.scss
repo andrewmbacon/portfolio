@@ -23,8 +23,8 @@
 		&:hover {
 			border-color: red;
 			img {
-				-webkit-transform:scale(1.55,1.55);
-				transform:scale(1.55,1.55);
+				-webkit-transform:scale(1.1,1.1);
+				transform:scale(1.1,1.1);
 			}
 		}
 
@@ -41,6 +41,7 @@
 			font-size: 1em;
 		}
 		.description {
+			text-align: center;
 		}
 	}
 }

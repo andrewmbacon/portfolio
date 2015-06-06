@@ -163,4 +163,9 @@ function img_responsive($class) {
 }
 add_filter('get_image_tag_class', 'img_responsive' );
 
+
+
+
+
+
 ?>
