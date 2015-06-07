@@ -1,5 +1,21 @@
-<?php get_header(); ?>
-<article>
+<?php 
+get_header();
+
+$cats = wp_get_post_terms($post->ID, 'projectcategory');
+$tags = wp_get_post_terms($post->ID, 'projecttag');
+
+function project_classes(){
+	global $cats;
+	global $tags;
+	foreach ($cats as $cat => $value) {
+		echo $value->slug.' ';
+	};
+	foreach ($tags as $tag => $value) {
+		echo $value->slug.' ';
+	};
+};
+?>
+<article class="<?php project_classes();?>">
 	<div class="container">
 	<?php while ( have_posts() ) : the_post(); ?>
 		<div class="row" id="project-header">
@@ -11,18 +27,6 @@
 			</div>
 			<div class="col-sm-4">
 				<div id="details">
-					<!--
-					<table>
-						<tr>
-							<th>Timeline</th>
-							<td><?php the_field('timeframe')?></td>
-						</tr>
-						<tr>
-							<th>Client</th>
-							<td><?php the_field('client')?></td>
-						</tr>
-					</table>
-					-->
 					<p id="project-meta"><?php the_field('timeframe')?><br/>
 						<?php the_field('client')?><br/>
 					<?php the_field('role')?></p>
@@ -40,7 +44,7 @@
 					<p>
 						<span class="cats">
 							<?php
-							$cats = wp_get_post_terms($post->ID, 'projectcategory');
+							
 							$cats_length = sizeof($cats);
 							if ($cats_length > 1){
 								echo '<span class="label">Categories:</span> ';
