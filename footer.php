@@ -6,7 +6,7 @@
 				<div class="col-sm-5">
 					<div id="about">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/me.jpg" alt="Photo of Andrew Bacon"/>
-						<p>I am an interactive designer in rural eastern Connecticut, focused on building tools that bridge the gap between people and technology, and intent on improving the lives of normal people in small but meaningful ways.</p>
+						<p>I am an interactive designer working in eastern Connecticut, focused on building tools that bridge the gap between people and technology, and intent on improving the lives of normal people in small but meaningful ways.</p>
 					</div>
 				</div>
 				<div class="col-sm-2">

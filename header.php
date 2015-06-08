@@ -29,7 +29,7 @@
 	<a href="#content">Skip to Content</a>
 </nav>
 <header id="header">
-	<nav class="navbar navbar-default" role="navigation" id="site-navigation">
+	<nav class="navbar navbar-inverse" role="navigation" id="site-navigation">
 	  <div class="container">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 		<div class="navbar-header">

@@ -15,6 +15,7 @@ License URI: 	http://www.gnu.org/licenses/gpl-2.0.html
 @import "_projects-grid.scss";
 
 body {
+	/*
 	background: #d6d6d6;
 	background: -moz-linear-gradient(top,  #d6d6d6 0%, #efefef 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d6d6d6), color-stop(100%,#efefef));
@@ -23,6 +24,7 @@ body {
 	background: -ms-linear-gradient(top,  #d6d6d6 0%,#efefef 100%);
 	background: linear-gradient(to bottom,  #d6d6d6 0%,#efefef 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6d6d6', endColorstr='#efefef',GradientType=0 );
+	*/
 }
 
 #content {
@@ -38,7 +40,34 @@ body {
 		margin-top: 0;
 	}
 	#content {
-		margin-top: -40px;
+		margin-top: -100px;
+	}
+	#project-header-wrapper {
+		position: relative;
+		//background-color: #ccc;
+		padding-top: 90px;
+
+		/*
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			bottom:-35px;
+			left:0;
+			width:100%;
+			height: 100px;
+			//background-color: red; opacity: .9;
+			background-color: #ccc;
+			-webkit-transform: skew(0,-1.5deg);
+			transform: skew(0,-1.5deg);
+			-webkit-backface-visibility: hidden;
+			z-index: 1;
+		}
+
+*/		.container,
+		.container * {
+			z-index: 2;
+		}
 	}
 	#project-header {
 		//border-bottom:1px solid #aeaeae;
@@ -56,50 +85,76 @@ body {
 		}
 	}
 	#project-main {
-		margin-top: 47px;
 		margin-bottom: 50px;
 	}
-}
+	.btn {
 
-#footer {
-	#footer-inner {
-		padding-top: 20px;
-		font-size: 18px;
+		padding:18px 30px;
+		-webkit-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
+		-moz-box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
+		box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.25);
+
+		.glyphicon {
+			font-size: .6em;
+		}
 	}
-
-	#about {
+	/*
+	#project-main {
 		position: relative;
-		padding-left: 145px;
-		img {
+		margin-top: 17px;
+		margin-bottom: 50px;
+		padding: 60px 90px;
+		background-color: white;
+
+		&:after {
+			content: '';
 			display: block;
 			position: absolute;
 			top:0;
-			left: 0;
-			width:110px;
-			height:110px;
-			border:8px solid #494949;
-		}
-		p {
-			font-size: 14px;
-		}
-	}
-	.widget_search {
-		position: relative;
+			right:0;
+			width: 0;
+			height: 0;
+			border-color: transparent;
+			border-width: 50px;
+			//border-
 
-		#search {
-			border-width:0;
-			padding:9px 85px 9px 15px;
-			background-color: #333;
-			width:100%;
 		}
-		#search-button {
-			position: absolute;
-			top:0;
-			right: 0;
-			padding:9px 18px;
-			background-color: #262626;
-			border:0;
-			border-left: 5px solid #000;
-		}
+	}*/
+}
+@media (max-width: 1600px) {
+	.single-project #project-header-wrapper:after {
+		bottom: -22px;
 	}
+}
+@media (max-width: 1440px) {
+	.single-project #project-header-wrapper:after {
+		bottom: -17px;	
+	}
+}
+@media (max-width: 1280px) {
+	.single-project #project-header-wrapper:after {
+		bottom: -15px;	
+	}
+}
+@media (max-width: 1024px) {
+	.single-project #project-header-wrapper:after {
+		bottom: -12px;	
+	}
+}
+@media (max-width: 768px) {
+	.single-project #project-header-wrapper:after {
+		bottom: -10px;	
+	}
+}
+
+.aligncenter {
+	margin:auto;
+}
+.alignleft {
+	float: left;
+	margin: 0 30px 30px 0;
+}
+.alignright {
+	float: right;
+	margin: 0  0 30px 30px;
 }

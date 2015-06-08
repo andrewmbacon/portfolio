@@ -1,12 +1,15 @@
+
+$icon-font-path: "bootstrap-sass/fonts/bootstrap/";
+
 $brand-primary: 					#499fff;
 
 
-$body-bg: 							#d9d9d9;
+$body-bg: 							#fff;
 $font-family-sans-serif:			"Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size-base:					16px;
 
-$font-size-h1:						30px;
-$font-size-h2:						18px;
+$font-size-h1:						34px;
+$font-size-h2:						21px;
 $font-size-h3:						16px;
 
 
@@ -17,11 +20,11 @@ $grid-gutter-width:					80px;
 $navbar-height:						97px;
 $navbar-margin-bottom:				0;
 $navbar-border-radius:				0;
-$navbar-default-bg:					#fff;
-$navbar-default-link-color: 		#5d5d5d;
-$navbar-default-link-hover-color:	$brand-primary; 
-$navbar-default-link-active-color:	$brand-primary; 
-$navbar-default-link-active-bg:		transparent;
+//$navbar-default-bg:					#fff;
+//$navbar-default-link-color: 		#5d5d5d;
+$navbar-inverse-link-hover-color:	$brand-primary; 
+$navbar-inverse-link-active-color:	$brand-primary; 
+$navbar-inverse-link-active-bg:		transparent;
 
-$well-bg:                     		#c6c5c5;
-$well-border:				 		#b5b5b5;
+//$well-bg:                     		#c6c5c5;
+//$well-border:				 		#b5b5b5;

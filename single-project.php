@@ -16,23 +16,27 @@ function project_classes(){
 };
 ?>
 <article class="<?php project_classes();?>">
-	<div class="container">
 	<?php while ( have_posts() ) : the_post(); ?>
-		<div class="row" id="project-header">
-			<div class="col-sm-8">
-				<header id="project-title">
-					<h1 ><?php the_title(); ?> </h1> 
-					<div id="description"><?php the_excerpt();?></div>
-				</header>
-			</div>
-			<div class="col-sm-4">
-				<div id="details">
-					<p id="project-meta"><?php the_field('timeframe')?><br/>
-						<?php the_field('client')?><br/>
-					<?php the_field('role')?></p>
+	<div id="project-header-wrapper">
+		<div class="container">
+			<div class="row" id="project-header">
+				<div class="col-sm-8">
+					<header id="project-title">
+						<h1 ><?php the_title(); ?> </h1> 
+						<div id="description"><?php the_excerpt();?></div>
+					</header>
+				</div>
+				<div class="col-sm-4">
+					<div id="details">
+						<p id="project-meta"><?php the_field('timeframe')?><br/>
+							<?php the_field('client')?><br/>
+						<?php the_field('role')?></p>
+					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<hr/>
@@ -84,7 +88,7 @@ function project_classes(){
 				</footer>
 			</div>
 		</div>
+	</div>	
 	<?php endwhile; ?>
-	</div>
 </article>
 <?php get_footer(); ?>

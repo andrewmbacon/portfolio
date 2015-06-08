@@ -8,7 +8,7 @@
 // Reset and dependencies
 @import "../bootstrap-sass/stylesheets/bootstrap/normalize";
 @import "../bootstrap-sass/stylesheets/bootstrap/print";
-//@import "../bootstrap-sass/stylesheets/bootstrap/glyphicons";
+@import "../bootstrap-sass/stylesheets/bootstrap/glyphicons";
 
 // Core CSS
 @import "../bootstrap-sass/stylesheets/bootstrap/scaffolding";
@@ -19,7 +19,7 @@
 @import "../bootstrap-sass/stylesheets/bootstrap/forms";
 // ^^ requried for mobile nav. 
 
-//@import "../bootstrap-sass/stylesheets/bootstrap/buttons";
+@import "../bootstrap-sass/stylesheets/bootstrap/buttons";
 
 // Components
 @import "../bootstrap-sass/stylesheets/bootstrap/component-animations";

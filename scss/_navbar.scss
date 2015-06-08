@@ -9,31 +9,58 @@
 	font-weight: 100;
 
 	.container {
-		z-index: 2;
-		position: relative;	
+		z-index: 9999;
+		position: relative;
+
+		.navbar-collapse {
+			z-index: 9999;
+			background-color: #222;
+		}
 	}
 	
 	.navbar-brand {
 		position: relative;
 		top:-7px;
-	}
 
-	#logo {
-		width:49px;
-		height:37px;
-		margin-right: 18px;
-	}
-	#name {
-		position: relative;
-		top:-13px;
-		width:163px;
-		height: 22px;
+		#logo {
+			width:49px;
+			height:37px;
+			margin-right: 18px;
+
+			path {
+				fill: $brand-primary;
+			}
+		}
+		#name {
+			position: relative;
+			top:-13px;
+			width:163px;
+			height: 22px;
+
+			path {
+				fill:#fff;
+			}
 
 
-		#name-first {
-			opacity:.5;
+			#name-first {
+				opacity:.5;
+			}
 		}
 	}
+
+	.navbar-brand:hover {
+		#logo path {
+			//fill: #fff;
+		}
+		#name path {
+			fill: $brand-primary;
+		}
+		#name #name-first {
+			opacity: 1;
+		}
+	}
+
+
 }
 .navbar:after {
 	content:'';
@@ -46,7 +73,7 @@
 	left:-1px;
 	-webkit-transform: skew(0,1.5deg);
 	transform: skew(0,1.5deg);
-	background-color: $navbar-default-bg;
+	background-color: $navbar-inverse-bg;
 	//background-color: red; opacity: .5;
 	// ^ debug styles
 	-webkit-backface-visibility: hidden;
