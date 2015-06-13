@@ -20,18 +20,10 @@ function project_classes(){
 	<div id="project-header-wrapper">
 		<div class="container">
 			<div class="row" id="project-header">
-				<div class="col-sm-8">
-					<header id="project-title">
-						<h1 ><?php the_title(); ?> </h1> 
-						<div id="description"><?php the_excerpt();?></div>
+				<div class="col-sm-12">
+					<header class="clearfix">
+						<h1 id="project-title"><?php the_title(); ?> </h1> <p id="project-meta" class="small"><?php the_field('timeframe')?></p>
 					</header>
-				</div>
-				<div class="col-sm-4">
-					<div id="details">
-						<p id="project-meta"><?php the_field('timeframe')?><br/>
-							<?php the_field('client')?><br/>
-						<?php the_field('role')?></p>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -39,7 +31,6 @@ function project_classes(){
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<hr/>
 				<main id="project-main">
 					<?php the_content(); ?>
 				</main>

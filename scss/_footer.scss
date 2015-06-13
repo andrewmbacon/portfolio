@@ -1,7 +1,7 @@
 //== Footer
 #footer {
 	
-
+	visibility: hidden;
 	position: relative;
 	color:#fff;
 	overflow: hidden;
@@ -27,6 +27,7 @@
 			left:0;
 			-webkit-transform: skew(0,-1.5deg);
 			transform: skew(0,-1.5deg);
+			-webkit-backface-visibility: hidden;
 			background-color: #000;
 			//background-color: red; opacity: .5;
 			height: 100px;

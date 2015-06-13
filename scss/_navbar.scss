@@ -1,12 +1,15 @@
 //== Navbar
+
+
 #header {
 	overflow-x: hidden;
-	min-height: 200px;
+	min-height: 150px;
 }
 .navbar {
-	position:relative;
-	font-size: 21px;
+	//position:relative;
+	font-size: 16px;
 	font-weight: 100;
+	letter-spacing: 0.04em;
 
 	.container {
 		z-index: 9999;
@@ -14,28 +17,26 @@
 
 		.navbar-collapse {
 			z-index: 9999;
-			background-color: #222;
+			background-color: $navbar-inverse-bg;
 		}
 	}
 	
 	.navbar-brand {
-		position: relative;
-		top:-7px;
 
 		#logo {
-			width:49px;
+			width:35px;
 			height:37px;
-			margin-right: 18px;
+			margin-right: 10px;
 
 			path {
-				fill: $brand-primary;
+				fill: #fff;
 			}
 		}
 		#name {
 			position: relative;
 			top:-13px;
 			width:163px;
-			height: 22px;
+			height: 18px;
 
 			path {
 				fill:#fff;
@@ -43,64 +44,94 @@
 
 
 			#name-first {
-				opacity:.5;
+				opacity:.8;
 			}
 		}
 	}
 
 	.navbar-brand:hover {
 		#logo path {
-			//fill: #fff;
+			fill: #bbb;
 		}
 		#name path {
-			fill: $brand-primary;
+			fill: #bbb;
 		}
 		#name #name-first {
 			opacity: 1;
+			fill: #bbb;
 		}
 	}
 
 
+	.contact-button {
+		.btn {
+			padding-bottom: 3px;
+			position: relative;
+			top:-5px;
+		}
+	}
+
 }
+
+
+@media (min-width: 968px) {
+	.navbar-brand {
+		position: relative;
+		bottom: -5px;
+	}
+	#menu-top {
+		position: relative;
+		top: 11px;
+	}
+	.navbar-nav > li {
+		margin: 0 1em;		
+	}
+}
+
+
+
+
 .navbar:after {
 	content:'';
 	display: block;
-	height: 135px;
+	height: 100px;
 	width:101%;
 	// needed to cover the gap that appears bottom right from twisting. 
 	position: absolute;
-	top:0;
+	top:-20px;
 	left:-1px;
-	-webkit-transform: skew(0,1.5deg);
-	transform: skew(0,1.5deg);
+	-webkit-transform: skew(0,1deg);
+	transform: skew(0,1deg);
 	background-color: $navbar-inverse-bg;
 	//background-color: red; opacity: .5;
 	// ^ debug styles
 	-webkit-backface-visibility: hidden;
 	z-index: 1;
 }
-@media (max-width: 1600px) {
-	.navbar:after {
-		height: 120px;
-	}
-}
-@media (max-width: 1440px) {
-	.navbar:after {
-		height: 118px;
-	}
-}
 @media (max-width: 1280px) {
 	.navbar:after {
-		height: 115px;
+		top:-29px;
 	}
 }
 @media (max-width: 1024px) {
 	.navbar:after {
-		height: 111px;
+		top:-20px;
 	}
 }
 @media (max-width: 768px) {
 	.navbar:after {
-		height: 108px;
+		top:-32px;
+	}
+	.navbar-brand {
+		padding-right: 10px;
+	}
+}
+@media (max-width: 360px) {
+	.navbar:after {
+		top:-45px;
+	}
+	.navbar-brand {
+		padding-right: 10px;
+		padding-left: 10px;
 	}
 }

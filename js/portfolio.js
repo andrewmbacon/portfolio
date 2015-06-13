@@ -10,16 +10,23 @@ function stickyFooter(){
 	var bodyH = $('body').outerHeight();
 	//var footerH = $('#footer').outerHeight();
 	var windowH = window.innerHeight;
+	console.log(windowH);
+	console.log(bodyH);
+	
 	if(windowH>=bodyH){
 		$('body').addClass('stickyfooter');
 	}
+	$('#footer').attr('style', 'visibility:visible;');
 }
 
 
 
+$('.contact-button a').html('<span class="btn btn-sm btn-primary">Contact</span>').addClass('poop');
+
+
 
 $(document).ready(function(){
-	stickyFooter();
+	//stickyFooter();
 });
 $(window).resize(function() {
 	stickyFooter();

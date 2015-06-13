@@ -13,18 +13,21 @@ $font-size-h2:						21px;
 $font-size-h3:						16px;
 
 
-$headings-font-weight:				bold;
+$headings-font-weight:				500;
 
-$grid-gutter-width:					80px;
+$grid-columns:						10;
+$grid-gutter-width:					50px;
 
-$navbar-height:						97px;
+$navbar-height:						50px;
 $navbar-margin-bottom:				0;
 $navbar-border-radius:				0;
 //$navbar-default-bg:					#fff;
-//$navbar-default-link-color: 		#5d5d5d;
-$navbar-inverse-link-hover-color:	$brand-primary; 
-$navbar-inverse-link-active-color:	$brand-primary; 
+$navbar-inverse-link-color: 		#fff;
+$navbar-inverse-link-hover-color:	darken($navbar-inverse-link-color, 25%);
+$navbar-inverse-link-active-color:	darken($navbar-inverse-link-color, 25%); 
 $navbar-inverse-link-active-bg:		transparent;
+$navbar-inverse-bg:					#656565;
+
 
 //$well-bg:                     		#c6c5c5;
 //$well-border:				 		#b5b5b5;
