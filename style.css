@@ -4656,7 +4656,7 @@ a.badge:focus {
   position: relative;
   color: #fff;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 #footer #footer-inner {
@@ -4725,6 +4725,16 @@ a.badge:focus {
   background-color: #262626;
   border: 0;
   border-left: 5px solid #000;
+}
+
+#footer #copyright {
+  color: #666;
+}
+
+#footer #footer-links,
+#footer #footer-links li {
+  list-style-type: none;
+  padding: 0;
 }
 
 @media (max-width: 1600px) {
@@ -4821,6 +4831,13 @@ a.badge:focus {
   text-align: center;
   font-size: 14px;
   color: #777;
+}
+
+@media (min-width: 768px) {
+  .page-template-page-projects #content #row1,
+  .page-template-page-projects #content #row2 {
+    margin-top: 50px;
+  }
 }
 
 body {

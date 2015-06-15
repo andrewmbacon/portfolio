@@ -13,6 +13,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 
 }
 .page-template-page-projects #content {
+
+	
 	.thumbnail {
 		display: block;
 		position: relative;
@@ -59,6 +61,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 			text-align: center;
 			font-size: 14px;
 			color:#777;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.page-template-page-projects #content {
+		#row1,
+		#row2 {
+			margin-top: 50px;
 		}
 	}
 }

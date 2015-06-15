@@ -72,6 +72,7 @@ $projects_query = new WP_Query($projects_args);
 // Used to build the rows & columns. 
 $projects_count = $projects_query->found_posts;
 $project_counter = 0;
+$rowcount = 2;
 ?>
 
 <div class="container">
@@ -80,20 +81,20 @@ $project_counter = 0;
 			<?php the_content(); ?>
 		</main>
 	<?php endwhile;?>
-	<div class="row">
+	<div class="row" id="row1">
 		<?php
 		// build the rows and columns. 
 		while ( $projects_query->have_posts() ) {
 				$projects_query->the_post();
 				$project_counter++;
-				echo '<div class="col-sm-2';
-				//if ($project_counter == 9) {echo ' col-sm-offset-3';}
-				echo '">';
+				echo '<div class="col-sm-2">';
 				get_template_part( 'content', 'project' ); 
 				echo '</div>';
-				if ($project_counter % 5 == 0){ 
+				if ($project_counter % 5 == 0 && $projectcounter < 10){ 
 					//after every third post close this row, and start a new one. 
-					echo '</div><!-- /row --><div class="row">';
+					
+					echo '</div><!-- /row --><div class="row" id="row'.$rowcount.'">';
+					$rowcount++;
 				}
 		}
 		wp_reset_postdata();
