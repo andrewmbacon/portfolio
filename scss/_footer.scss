@@ -1,11 +1,11 @@
 //== Footer
 #footer {
 	
-
+	visibility: hidden;
 	position: relative;
 	color:#fff;
 	overflow: hidden;
-	padding-top: 100px;
+	padding-top: 70px;
 
 	#footer-inner {
 		background-color: #000;
@@ -27,6 +27,7 @@
 			left:0;
 			-webkit-transform: skew(0,-1.5deg);
 			transform: skew(0,-1.5deg);
+			-webkit-backface-visibility: hidden;
 			background-color: #000;
 			//background-color: red; opacity: .5;
 			height: 100px;
@@ -70,6 +71,15 @@
 		}
 	}
 
+	#copyright {
+		color: #666;
+	}
+
+	#footer-links,
+	#footer-links li {
+		list-style-type: none;
+		padding: 0;
+	}
 
 	
 }

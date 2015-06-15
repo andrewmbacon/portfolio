@@ -59,7 +59,7 @@ if ($category_length>0 && $tag_length>0){
 
 
 $projects_args = array(
-	'posts_per_page'	=> -1,
+	'posts_per_page'	=> 10,
 	'post_type'      	=> 'project',
 	'orderby'			=> 'menu_order date',
 	'order'  			=> 'DESC',	
@@ -72,36 +72,34 @@ $projects_query = new WP_Query($projects_args);
 // Used to build the rows & columns. 
 $projects_count = $projects_query->found_posts;
 $project_counter = 0;
+$rowcount = 2;
 ?>
+
 <div class="container">
-	<div class="row">
-	<div class="col-sm-9">
-		<div class="row">
-			<?php
-			// build the rows and columns. 
-			while ( $projects_query->have_posts() ) {
-					$projects_query->the_post();
-					$project_counter++;
-					echo '<div class="col-sm-4">';
-					get_template_part( 'content', 'project' ); 
-					echo '</div>';
-					if ($project_counter % 3 == 0){ 
-						//after every third post close this row, and start a new one. 
-						echo '</div><!-- /row --><div class="row">';
-					}
-			}
-			wp_reset_postdata();
-			?>
-		</div><!-- /last row -->
-	</div>
-	<div class="col-sm-3">
-		<?php while ( have_posts() ) : the_post(); ?>
-			<h2><?php the_title(); ?></h2>
-			<main>
-				<?php the_content(); ?>
-			</main>
-		<?php endwhile;?>
-	</div>
+	<?php while ( have_posts() ) : the_post(); ?>
+		<main>
+			<?php the_content(); ?>
+		</main>
+	<?php endwhile;?>
+	<div class="row" id="row1">
+		<?php
+		// build the rows and columns. 
+		while ( $projects_query->have_posts() ) {
+				$projects_query->the_post();
+				$project_counter++;
+				echo '<div class="col-sm-2">';
+				get_template_part( 'content', 'project' ); 
+				echo '</div>';
+				if ($project_counter % 5 == 0 && $projectcounter < 10){ 
+					//after every third post close this row, and start a new one. 
+					
+					echo '</div><!-- /row --><div class="row" id="row'.$rowcount.'">';
+					$rowcount++;
+				}
+		}
+		wp_reset_postdata();
+		?>
+	</div><!-- /last row -->
 </div><!-- /container -->
 
 

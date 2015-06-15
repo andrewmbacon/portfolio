@@ -1,20 +1,19 @@
 <?php get_header();?>
 <div class="container">
 	<div class="row">
-		<div class="col-md-9">
+		<div class="col-md-6">
 			<?php if ( have_posts() ) : ?>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php
-						get_template_part( 'content', 'single' );
-					?>
+					<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+					<p><?php the_excerpt(); ?>
 
 				<?php endwhile; ?>
 
 			<?php else : ?>
 
-				<?php get_template_part( 'content', 'none' ); ?>
+	
 
 			<?php endif; ?>
 		</div>
